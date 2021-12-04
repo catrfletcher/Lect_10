@@ -1,0 +1,9 @@
+#!/usr/local/bin/python3
+
+dna_seq="ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT"
+
+num_A=dna_seq.count("A")
+num_T=dna_seq.count("T")
+length = len(dna_seq)
+ATcontent = num_A + num_T / length
+print(ATcontent)
