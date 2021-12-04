@@ -1,0 +1,20 @@
+#!/usr/local/bin/python3
+
+dna_seq="ACTGATCGATTACGTATAGTATTTGCTATCATACATATATATCGATGCGTTCAT"
+
+final =	""
+for n in dna_seq:
+	if n ==	"A":
+		new = n.replace("A", "T")
+		final+=new
+	elif n == "T":
+		new = n.replace("T", "A")
+		final+=new
+	elif n == "G":
+		new = n.replace("G", "C")
+		final+=new
+	elif n == "C":
+		new = n.replace("C", "G")
+		final+=new
+
+print(final)
