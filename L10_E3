@@ -1,0 +1,11 @@
+#!/usr/local/bin/python3
+
+dna_seq="ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT"
+
+motif=dna_seq.find("GAATTC")
+cut=motif+1
+frag1 = len(dna_seq[:cut])
+frag2 = len(dna_seq[cut:])
+print("The length of the first fragment is " + str(frag1))
+print("The length of the second fragment is " + str(frag2))
+print(len(dna_seq))
