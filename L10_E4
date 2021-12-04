@@ -1,0 +1,17 @@
+#!/usr/local/bin/python3
+
+dna_seq="ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT"
+
+exon1 = dna_seq[:63]
+exon2 = dna_seq[91:]
+
+coding = exon1 + exon2
+
+print("The coding sequence is: " + coding)
+
+perc_coding = len(coding) / len(dna_seq) * 100
+
+print("The percentage of the DNA sequence that is coding is: " + str(perc_coding) + "%")
+
+intron = dna_seq[63:91]
+print(exon1 + intron.lower() + exon2)
